@@ -8,7 +8,6 @@ html{
 
 body{
 	margin: 0;
-	background-color: grey;
 }
 
 .wrapper{
@@ -16,12 +15,19 @@ body{
 	flex-direction:column;
 }
 
+.flex-nav{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index:4;
+}
+
 .flex-nav ul{
 	list-style: none;
 	margin:0;
 	padding:0;
 	display: flex;
-	background: black;
+	background: white;
 }
 
 .name{
@@ -32,8 +38,8 @@ body{
 
 a{
 	font-family: 'Archivo black', sans-serif;
-	color: white;
-	font-size: 18px;
+	color: black;
+	font-size: 22px;
 	text-decoration: none;
 	padding: 20px 30px 20px 30px;
 	display:inline-block;
@@ -42,13 +48,62 @@ a{
 }
 
 a:hover{
-	color:white;
+	color:blue;
+}
+
+.allworks, .about, .contact{
+	padding-top:75px;
+}
+
+.allworks{
+	background-color: green;
+	z-index:3;
+}
+
+.about{
+	background-color: blue;
+	z-index:2;
+}
+
+.contact{
+	background-color: yellow;
+	z-index:1;
+}
+
+
+.work{
+		margin: 25px 0px 0px 0px;
 }
 
 .workpic{
-	margin: 15px 15px 15px 30px;
-	width: 60%;
-	height: auto;
+	margin: 0px 5px 30px 20%;
+	object-fit: contain;
+	width:60%;
+	height:auto;
+	transition: all .5s ease-in-out;
+}
+
+.workpic:hover{
+	transform: scale(1.03);
+	box-shadow: 5px 5px 30px gray;
+}
+
+.worktext{
+	font-family: 'Archivo black', sans-serif;
+	color: black;
+	font-size: 22px;
+	text-decoration: none;
+	margin: 0px 0px 70px 20%;
+}
+
+.pealkiri{
+	margin: 30px 0px 0px 30px;
+	font-family: 'Archivo black', sans-serif;
+	color: #F5F5F5;
+	font-size: 100px;
+	font-weight: 600;
+	position: fixed;
+
 }
 
 @media all and (max-width:1000px) {
