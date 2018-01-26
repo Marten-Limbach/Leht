@@ -8,7 +8,26 @@ html{
 
 body{
 	margin: 0;
-	background-color: black;
+	background-color: grey;
+}
+
+.wrapper{
+	display: flex;
+	flex-direction:column;
+}
+
+.flex-nav ul{
+	list-style: none;
+	margin:0;
+	padding:0;
+	display: flex;
+	background: black;
+}
+
+.name{
+	flex:1;
+	font-size: 16px;
+	padding-top: 5px;
 }
 
 a{
@@ -16,34 +35,26 @@ a{
 	color: white;
 	font-size: 18px;
 	text-decoration: none;
-	padding: 20px 30px;
+	padding: 20px 30px 20px 30px;
 	display:inline-block;
 	width: 100%;
 	transition:all 0.5;
 }
 
 a:hover{
-	color:yellow;
-}
- 
-.flex-nav ul{
-	border: solid 1px white;
-	list-style: none;
-	margin:0;
-	padding:0;
-	display: flex;
+	color:white;
 }
 
-
-
-.name{
-	flex:1;
+.workpic{
+	margin: 15px 15px 15px 30px;
+	width: 60%;
+	height: auto;
 }
 
 @media all and (max-width:1000px) {
 
 	a{
-	font-size: 14px;
+	font-size: 16px;
 	}
 
 }
@@ -51,9 +62,7 @@ a:hover{
 @media all and (max-width:500px) {
 
 	a{
-	font-size: 12px;
+	font-size: 16px;
 	}
 
 }
-
-
