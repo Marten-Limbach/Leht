@@ -20,5 +20,5 @@ $(document).ready(function(){
     });
   };
 
-$('.sidebarDiv').followTo(1000);
+$('.sidebarDiv').followTo(1350);
 });
