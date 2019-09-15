@@ -56,17 +56,14 @@ a:hover{
 }
 
 .allworks{
-	background-color: green;
 	z-index:3;
 }
 
 .about{
-	background-color: blue;
 	z-index:2;
 }
 
 .contact{
-	background-color: yellow;
 	z-index:1;
 }
 
@@ -96,14 +93,34 @@ a:hover{
 	margin: 0px 0px 70px 20%;
 }
 
-.pealkiri{
+.headertext{
+	font-family: 'Archivo black', sans-serif;
+	color: black;
+	font-size: 42px;
+	text-decoration: none;
+	margin: 50px 0px 10px 0px;
+}
+
+.contacttext{
+	font-family: 'Archivo black', sans-serif;
+	color: black;
+	font-size: 42px;
+	text-decoration: none;
+	margin: 50px 0px 70px 20%;
+}
+
+
+.sidebarDiv{
 	margin: 30px 0px 0px 30px;
 	font-family: 'Archivo black', sans-serif;
-	color: #F5F5F5;
 	font-size: 100px;
 	font-weight: 600;
 	position: fixed;
+	width: 100px;
+}
 
+.titleText{
+  word-break: break-all;
 }
 
 @media all and (max-width:1000px) {
